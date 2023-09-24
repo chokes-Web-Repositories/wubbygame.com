@@ -2,7 +2,7 @@
 	<div class="container">
 		<img class="logo" src="/title.png" alt="title" draggable="false" />
 		<br />
-		<span style="font-size: 38px; font-weight: bold;">Push the boundaries of the imaginable</span>
+		<span style="font-size: 2em; font-weight: bold;">Push the boundaries of the imaginable</span>
 		<br />
 		<a
 			style="background-color: #00b06f; border: none; color: white;"
