@@ -1,0 +1,106 @@
+/* the funny animated dots */
+@keyframes move {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 -20px; }
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: 'Figtree', serif;
+  background-color: #191919;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex; /* Add this */
+  flex-direction: column; /* Add this */
+  justify-content: center; /* Add this */
+  align-items: center; /* Add this */
+  height: 100vh; /* Add this */
+}
+body::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: #FFFFFF;
+
+  content: "";
+  position: absolute;
+  width: 900%;
+  height: 900%;
+  top: -100%;
+  left: -100%;
+  z-index: -1;
+  background-image: radial-gradient(#2c2c2c 1.7px, transparent 1px);
+  background-size: 20px 20px;
+  animation: move 1s linear infinite;
+  transform: rotate(5deg);
+}
+
+/* the logo */
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* the text and buttons */
+.description {  
+  font-size: 2em;
+  justify-content: center;
+  max-width: auto; 
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+}
+
+.play-button {
+  background-color: #00b06f;
+  color: white;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.discord-button {
+  background-color: #5561f5;
+  color: white;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.visit-button {
+  background-color: transparent;
+  border: 1px solid #bdbebe;
+  color: hsla(0, 0%, 100%, 0.7);
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.visit-button:hover {
+  border: 1px solid #ffffff;
+}
