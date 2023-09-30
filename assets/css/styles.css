@@ -47,13 +47,13 @@ body::before {
 
 /* the logo */
 .logo {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
 
 /* the text and buttons */
 .description {  
-  font-size: 2em;
+  font-size: 1.8em;
   justify-content: center;
   max-width: auto; 
   text-align: center;
