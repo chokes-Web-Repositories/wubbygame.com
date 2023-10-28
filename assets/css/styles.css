@@ -39,7 +39,7 @@ body::before {
   top: -100%;
   left: -100%;
   z-index: -1;
-  background-image: radial-gradient(#2c2c2c 1.7px, transparent 1px);
+  background-image: radial-gradient(#ff00003a 1.7px, transparent 1px);
   background-size: 20px 20px;
   animation: move 1s linear infinite;
   transform: rotate(5deg);
